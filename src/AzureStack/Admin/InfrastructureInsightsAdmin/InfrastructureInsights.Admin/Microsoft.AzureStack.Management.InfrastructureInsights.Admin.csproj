@@ -25,5 +25,11 @@
 
     <!-- Please do not move/edit code below this line -->
     <Import Condition=" Exists('$([MSBuild]::GetPathOfFileAbove(AzSdk.RP.props))') " Project="$([MSBuild]::GetPathOfFileAbove('AzSdk.RP.props'))" />
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Azure.ResourceManager" Version="1.1.0-preview" />
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Update="Newtonsoft.Json" Version="11.0.2" />
+    </ItemGroup>
     <!-- Please do not move/edit code above this line -->
 </Project>

@@ -1,0 +1,14 @@
+﻿Installing AutoRest version: latest
+AutoRest installed successfully.
+Commencing code generation
+Generating CSharp code
+Executing AutoRest command
+cmd.exe /c autorest.cmd https://github.com/sumitabarahmand/azure-rest-api-specs/blob/feature/repairswagger/specification/azsadmin/resource-manager/infrastructureinsights/readme.md --csharp --version=latest --reflect-api-versions --csharp-sdks-folder=C:\Git\azure-sdk-for-net\src\AzureStack\Admin\InfrastructureInsightsAdmin\InfrastructureInsights.Admin
+2018-10-09 21:56:45 UTC
+Azure-rest-api-specs repository information
+GitHub fork: sumitabarahmand
+Branch:      feature/repairswagger
+Commit:      6a19a8775a8d24aeb02b73f20e7c3d56ba1ba13c
+AutoRest information
+Requested version: latest
+Bootstrapper version:    autorest@2.0.4283
