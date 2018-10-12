@@ -1,0 +1,136 @@
+{
+  "Entries": [
+    {
+      "RequestUri": "/subscriptions/fed888f2-d08a-44a5-8789-c3017c68a485/resourceGroups/System.local/providers/Microsoft.InfrastructureInsights.Admin/regionHealths?api-version=2016-05-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvZmVkODg4ZjItZDA4YS00NGE1LTg3ODktYzMwMTdjNjhhNDg1L3Jlc291cmNlR3JvdXBzL1N5c3RlbS5sb2NhbC9wcm92aWRlcnMvTWljcm9zb2Z0LkluZnJhc3RydWN0dXJlSW5zaWdodHMuQWRtaW4vcmVnaW9uSGVhbHRocz9hcGktdmVyc2lvbj0yMDE2LTA1LTAx",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "0803cd48-05e8-4cb6-a9c6-cd22165bd90f"
+        ],
+        "accept-language": [
+          "en-US"
+        ],
+        "User-Agent": [
+          "FxVersion/4.6.26614.01",
+          "Microsoft.AzureStack.Management.InfrastructureInsights.Admin.InfrastructureInsightsAdminClient/0.2.0.0"
+        ]
+      },
+      "ResponseHeaders": {
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Fri, 12 Oct 2018 00:19:56 GMT"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "Server": [
+          "Microsoft-HTTPAPI/2.0"
+        ],
+        "WWW-Authenticate": [
+          "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvwjZHwzr+DNcxuAA1L72pQnLo0hTTF8PgjRtiIws2l2lloFP7QPkgzhd9pqz4eMqdARtq03ZR8a2xMwhlcQ6xayX1DS5yUZcdQRDZFLjqWKqYkSPxmFD6s90S8zNkRPTdBuQxOqQljMfFeKHdvDve"
+        ],
+        "x-ms-correlation-request-id": [
+          "408bb365-d5af-4207-83b0-7e68200d081a"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14698"
+        ],
+        "x-ms-request-id": [
+          "408bb365-d5af-4207-83b0-7e68200d081a"
+        ],
+        "x-ms-routing-request-id": [
+          "LOCAL:20181012T001957Z:408bb365-d5af-4207-83b0-7e68200d081a"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "X-Content-Type-Options": [
+          "nosniff"
+        ],
+        "Content-Length": [
+          "815"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"value\": [\r\n    {\r\n      \"id\": \"/subscriptions/fed888f2-d08a-44a5-8789-c3017c68a485/resourceGroups/System.local/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/local\",\r\n      \"name\": \"local\",\r\n      \"type\": \"Microsoft.InfrastructureInsights.Admin/regionHealths\",\r\n      \"location\": \"local\",\r\n      \"tags\": {},\r\n      \"properties\": {\r\n        \"usageMetrics\": [\r\n          {\r\n            \"name\": \"Physical memory\",\r\n            \"metricsValue\": [\r\n              {\r\n                \"name\": \"Used\",\r\n                \"unit\": \"GB\",\r\n                \"value\": 92.6484375\r\n              },\r\n              {\r\n                \"name\": \"Available\",\r\n                \"unit\": \"GB\",\r\n                \"value\": 3.22265625\r\n              }\r\n            ]\r\n          },\r\n          {\r\n            \"name\": \"Physical storage\",\r\n            \"metricsValue\": [\r\n              {\r\n                \"name\": \"Used\",\r\n                \"unit\": \"TB\",\r\n                \"value\": 0.28089506551623344\r\n              },\r\n              {\r\n                \"name\": \"Available\",\r\n                \"unit\": \"TB\",\r\n                \"value\": 2.1710702665150166\r\n              }\r\n            ]\r\n          },\r\n          {\r\n            \"name\": \"Public IP address pools\",\r\n            \"metricsValue\": [\r\n              {\r\n                \"name\": \"Used\",\r\n                \"unit\": \"One\",\r\n                \"value\": 39.0\r\n              },\r\n              {\r\n                \"name\": \"Available\",\r\n                \"unit\": \"One\",\r\n                \"value\": 472.0\r\n              }\r\n            ]\r\n          }\r\n        ],\r\n        \"alertSummary\": {\r\n          \"criticalAlertCount\": 1,\r\n          \"warningAlertCount\": 0\r\n        }\r\n      }\r\n    }\r\n  ]\r\n}",
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/fed888f2-d08a-44a5-8789-c3017c68a485/resourceGroups/System.local/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/local/alerts?api-version=2016-05-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvZmVkODg4ZjItZDA4YS00NGE1LTg3ODktYzMwMTdjNjhhNDg1L3Jlc291cmNlR3JvdXBzL1N5c3RlbS5sb2NhbC9wcm92aWRlcnMvTWljcm9zb2Z0LkluZnJhc3RydWN0dXJlSW5zaWdodHMuQWRtaW4vcmVnaW9uSGVhbHRocy9sb2NhbC9hbGVydHM/YXBpLXZlcnNpb249MjAxNi0wNS0wMQ==",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "af3cab8b-e826-48cd-8b44-04b581d5275b"
+        ],
+        "accept-language": [
+          "en-US"
+        ],
+        "User-Agent": [
+          "FxVersion/4.6.26614.01",
+          "Microsoft.AzureStack.Management.InfrastructureInsights.Admin.InfrastructureInsightsAdminClient/0.2.0.0"
+        ]
+      },
+      "ResponseHeaders": {
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Fri, 12 Oct 2018 00:19:56 GMT"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "Server": [
+          "Microsoft-HTTPAPI/2.0"
+        ],
+        "WWW-Authenticate": [
+          "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvDAh5XRyBDP0ruOGNvIVvMmCpN/9kKLqnQ8lJEXTRnPmL9cIsVNznY3s8HSx5pCVq43bREHwnkjBCY2VfWWyKngUTmIvA0AqfAZZYuHapTqRZObVqadJP7n+0xNxzNHA8LH2QkEQkWbN9/2jpW13W"
+        ],
+        "x-ms-correlation-request-id": [
+          "8a7a2a1a-6088-4a35-a18f-109376416db6"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14697"
+        ],
+        "x-ms-request-id": [
+          "8a7a2a1a-6088-4a35-a18f-109376416db6"
+        ],
+        "x-ms-routing-request-id": [
+          "LOCAL:20181012T001957Z:8a7a2a1a-6088-4a35-a18f-109376416db6"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "X-Content-Type-Options": [
+          "nosniff"
+        ],
+        "Content-Length": [
+          "9897"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"value\": [\r\n    {\r\n      \"id\": \"/subscriptions/fed888f2-d08a-44a5-8789-c3017c68a485/resourceGroups/System.local/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/local/alerts/33ed438f-95ff-439d-b203-9425b94015d8\",\r\n      \"name\": \"local/33ed438f-95ff-439d-b203-9425b94015d8\",\r\n      \"type\": \"Microsoft.InfrastructureInsights.Admin/regionHealths/alerts\",\r\n      \"location\": \"local\",\r\n      \"tags\": {},\r\n      \"properties\": {\r\n        \"closedTimestamp\": \"2018-10-11T07:39:20.6398252Z\",\r\n        \"createdTimestamp\": \"2018-10-11T05:51:47.4176264Z\",\r\n        \"description\": [\r\n          {\r\n            \"text\": \"Azure Stack is not activated.\",\r\n            \"type\": \"Text\"\r\n          }\r\n        ],\r\n        \"faultId\": \"AzureBridge.NotActivated\",\r\n        \"alertId\": \"33ed438f-95ff-439d-b203-9425b94015d8\",\r\n        \"faultTypeId\": \"AzureBridge.NotActivated\",\r\n        \"lastUpdatedTimestamp\": \"2018-10-11T07:39:20.6398252Z\",\r\n        \"alertProperties\": {},\r\n        \"remediation\": [\r\n          {\r\n            \"text\": \"You have not activated Azure Stack. To do so, see the following help article: \",\r\n            \"type\": \"Text\"\r\n          },\r\n          {\r\n            \"linkType\": \"Uri\",\r\n            \"uri\": \"https://docs.microsoft.com/en-us/azure/azure-stack/azure-stack-register\",\r\n            \"type\": \"LinkBegin\"\r\n          },\r\n          {\r\n            \"text\": \"https://docs.microsoft.com/en-us/azure/azure-stack/azure-stack-register\",\r\n            \"type\": \"Text\"\r\n          },\r\n          {\r\n            \"type\": \"LinkEnd\"\r\n          },\r\n          {\r\n            \"text\": \".\",\r\n            \"type\": \"Text\"\r\n          }\r\n        ],\r\n        \"resourceRegistrationId\": \"1b1c8843-259e-4c99-b54d-4a6168e28ef1\",\r\n        \"resourceProviderRegistrationId\": \"e56bc7b8-c8b5-4e25-b00c-4f951effb22c\",\r\n        \"severity\": \"Warning\",\r\n        \"state\": \"Closed\",\r\n        \"title\": \"Activation Required\",\r\n        \"impactedResourceId\": \"/subscriptions/fed888f2-d08a-44a5-8789-c3017c68a485/resourceGroups/system.local/providers/Microsoft.Fabric.Admin/fabricLocations/local/infraRoles/AzureBridge\",\r\n        \"impactedResourceDisplayName\": \"AzureBridge\",\r\n        \"preview\": \"False\",\r\n        \"hasValidRemediationAction\": false,\r\n        \"remediationHistory\": {}\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/fed888f2-d08a-44a5-8789-c3017c68a485/resourceGroups/System.local/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/local/alerts/3b2bf2db-934a-480e-9555-e91d19a58440\",\r\n      \"name\": \"local/3b2bf2db-934a-480e-9555-e91d19a58440\",\r\n      \"type\": \"Microsoft.InfrastructureInsights.Admin/regionHealths/alerts\",\r\n      \"location\": \"local\",\r\n      \"tags\": {},\r\n      \"properties\": {\r\n        \"closedTimestamp\": \"2018-10-11T14:25:57.4040095Z\",\r\n        \"createdTimestamp\": \"2018-10-11T14:10:52.0958121Z\",\r\n        \"description\": [\r\n          {\r\n            \"text\": \"The region has consumed more than 95.00 % of available memory. Creating virtual machines with large amounts of memory may fail.\",\r\n            \"type\": \"Text\"\r\n          }\r\n        ],\r\n        \"alertId\": \"3b2bf2db-934a-480e-9555-e91d19a58440\",\r\n        \"faultTypeId\": \"AzureStack.ComputeController.LowMemoryCritical\",\r\n        \"lastUpdatedTimestamp\": \"2018-10-11T14:25:57.4040095Z\",\r\n        \"alertProperties\": {\r\n          \"percentage\": \"95.00 %\"\r\n        },\r\n        \"remediation\": [\r\n          {\r\n            \"text\": \"See \",\r\n            \"type\": \"Text\"\r\n          },\r\n          {\r\n            \"linkType\": \"Uri\",\r\n            \"uri\": \"https://aka.ms/azurestackaddnode\",\r\n            \"type\": \"LinkBegin\"\r\n          },\r\n          {\r\n            \"text\": \"https://aka.ms/azurestackaddnode\",\r\n            \"type\": \"Text\"\r\n          },\r\n          {\r\n            \"type\": \"LinkEnd\"\r\n          },\r\n          {\r\n            \"text\": \" for information about increasing capacity.\",\r\n            \"type\": \"Text\"\r\n          }\r\n        ],\r\n        \"resourceProviderRegistrationId\": \"e56bc7b8-c8b5-4e25-b00c-4f951effb22c\",\r\n        \"severity\": \"Critical\",\r\n        \"state\": \"Closed\",\r\n        \"title\": \"Low memory capacity\",\r\n        \"impactedResourceId\": \"/subscriptions/fed888f2-d08a-44a5-8789-c3017c68a485/resourceGroups/system.local/providers/Microsoft.Fabric.Admin/fabricLocations/local\",\r\n        \"impactedResourceDisplayName\": \"Capacity\",\r\n        \"preview\": \"False\",\r\n        \"hasValidRemediationAction\": false,\r\n        \"remediationHistory\": {}\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/fed888f2-d08a-44a5-8789-c3017c68a485/resourceGroups/System.local/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/local/alerts/6b31d0af-1936-418a-a2cc-1e7fd10a1678\",\r\n      \"name\": \"local/6b31d0af-1936-418a-a2cc-1e7fd10a1678\",\r\n      \"type\": \"Microsoft.InfrastructureInsights.Admin/regionHealths/alerts\",\r\n      \"location\": \"local\",\r\n      \"tags\": {},\r\n      \"properties\": {\r\n        \"closedTimestamp\": \"2018-10-11T15:26:24.3091376Z\",\r\n        \"createdTimestamp\": \"2018-10-11T14:25:57.4040095Z\",\r\n        \"description\": [\r\n          {\r\n            \"text\": \"The region has consumed more than 90.00 % of available memory. Creating virtual machines with large amounts of memory may fail.\",\r\n            \"type\": \"Text\"\r\n          }\r\n        ],\r\n        \"alertId\": \"6b31d0af-1936-418a-a2cc-1e7fd10a1678\",\r\n        \"faultTypeId\": \"AzureStack.ComputeController.LowMemoryWarning\",\r\n        \"lastUpdatedTimestamp\": \"2018-10-11T15:26:24.3091376Z\",\r\n        \"alertProperties\": {\r\n          \"percentage\": \"90.00 %\"\r\n        },\r\n        \"remediation\": [\r\n          {\r\n            \"text\": \"See \",\r\n            \"type\": \"Text\"\r\n          },\r\n          {\r\n            \"linkType\": \"Uri\",\r\n            \"uri\": \"https://aka.ms/azurestackaddnode\",\r\n            \"type\": \"LinkBegin\"\r\n          },\r\n          {\r\n            \"text\": \"https://aka.ms/azurestackaddnode\",\r\n            \"type\": \"Text\"\r\n          },\r\n          {\r\n            \"type\": \"LinkEnd\"\r\n          },\r\n          {\r\n            \"text\": \" for information about increasing capacity.\",\r\n            \"type\": \"Text\"\r\n          }\r\n        ],\r\n        \"resourceProviderRegistrationId\": \"e56bc7b8-c8b5-4e25-b00c-4f951effb22c\",\r\n        \"severity\": \"Warning\",\r\n        \"state\": \"Closed\",\r\n        \"title\": \"Low memory capacity\",\r\n        \"impactedResourceId\": \"/subscriptions/fed888f2-d08a-44a5-8789-c3017c68a485/resourceGroups/system.local/providers/Microsoft.Fabric.Admin/fabricLocations/local\",\r\n        \"impactedResourceDisplayName\": \"Capacity\",\r\n        \"preview\": \"False\",\r\n        \"hasValidRemediationAction\": false,\r\n        \"remediationHistory\": {}\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/fed888f2-d08a-44a5-8789-c3017c68a485/resourceGroups/System.local/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/local/alerts/e7301742-83a3-4add-bae2-7ab2a3dba418\",\r\n      \"name\": \"local/e7301742-83a3-4add-bae2-7ab2a3dba418\",\r\n      \"type\": \"Microsoft.InfrastructureInsights.Admin/regionHealths/alerts\",\r\n      \"location\": \"local\",\r\n      \"tags\": {},\r\n      \"properties\": {\r\n        \"createdTimestamp\": \"2018-10-11T15:26:24.3091376Z\",\r\n        \"description\": [\r\n          {\r\n            \"text\": \"The region has consumed more than 95.00 % of available memory. Creating virtual machines with large amounts of memory may fail.\",\r\n            \"type\": \"Text\"\r\n          }\r\n        ],\r\n        \"alertId\": \"e7301742-83a3-4add-bae2-7ab2a3dba418\",\r\n        \"faultTypeId\": \"AzureStack.ComputeController.LowMemoryCritical\",\r\n        \"lastUpdatedTimestamp\": \"2018-10-12T00:14:25.1740442Z\",\r\n        \"alertProperties\": {\r\n          \"percentage\": \"95.00 %\"\r\n        },\r\n        \"remediation\": [\r\n          {\r\n            \"text\": \"See \",\r\n            \"type\": \"Text\"\r\n          },\r\n          {\r\n            \"linkType\": \"Uri\",\r\n            \"uri\": \"https://aka.ms/azurestackaddnode\",\r\n            \"type\": \"LinkBegin\"\r\n          },\r\n          {\r\n            \"text\": \"https://aka.ms/azurestackaddnode\",\r\n            \"type\": \"Text\"\r\n          },\r\n          {\r\n            \"type\": \"LinkEnd\"\r\n          },\r\n          {\r\n            \"text\": \" for information about increasing capacity.\",\r\n            \"type\": \"Text\"\r\n          }\r\n        ],\r\n        \"resourceProviderRegistrationId\": \"e56bc7b8-c8b5-4e25-b00c-4f951effb22c\",\r\n        \"severity\": \"Critical\",\r\n        \"state\": \"Active\",\r\n        \"title\": \"Low memory capacity\",\r\n        \"impactedResourceId\": \"/subscriptions/fed888f2-d08a-44a5-8789-c3017c68a485/resourceGroups/system.local/providers/Microsoft.Fabric.Admin/fabricLocations/local\",\r\n        \"impactedResourceDisplayName\": \"Capacity\",\r\n        \"preview\": \"False\",\r\n        \"hasValidRemediationAction\": false,\r\n        \"remediationHistory\": {}\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/fed888f2-d08a-44a5-8789-c3017c68a485/resourceGroups/System.local/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/local/alerts/eceec9a5-f42d-46b3-915d-fb26b15f978a\",\r\n      \"name\": \"local/eceec9a5-f42d-46b3-915d-fb26b15f978a\",\r\n      \"type\": \"Microsoft.InfrastructureInsights.Admin/regionHealths/alerts\",\r\n      \"location\": \"local\",\r\n      \"tags\": {},\r\n      \"properties\": {\r\n        \"closedTimestamp\": \"2018-10-11T14:10:52.0958121Z\",\r\n        \"createdTimestamp\": \"2018-10-11T10:54:16.3081073Z\",\r\n        \"description\": [\r\n          {\r\n            \"text\": \"The region has consumed more than 90.00 % of available memory. Creating virtual machines with large amounts of memory may fail.\",\r\n            \"type\": \"Text\"\r\n          }\r\n        ],\r\n        \"alertId\": \"eceec9a5-f42d-46b3-915d-fb26b15f978a\",\r\n        \"faultTypeId\": \"AzureStack.ComputeController.LowMemoryWarning\",\r\n        \"lastUpdatedTimestamp\": \"2018-10-11T14:10:52.0958121Z\",\r\n        \"alertProperties\": {\r\n          \"percentage\": \"90.00 %\"\r\n        },\r\n        \"remediation\": [\r\n          {\r\n            \"text\": \"See \",\r\n            \"type\": \"Text\"\r\n          },\r\n          {\r\n            \"linkType\": \"Uri\",\r\n            \"uri\": \"https://aka.ms/azurestackaddnode\",\r\n            \"type\": \"LinkBegin\"\r\n          },\r\n          {\r\n            \"text\": \"https://aka.ms/azurestackaddnode\",\r\n            \"type\": \"Text\"\r\n          },\r\n          {\r\n            \"type\": \"LinkEnd\"\r\n          },\r\n          {\r\n            \"text\": \" for information about increasing capacity.\",\r\n            \"type\": \"Text\"\r\n          }\r\n        ],\r\n        \"resourceProviderRegistrationId\": \"e56bc7b8-c8b5-4e25-b00c-4f951effb22c\",\r\n        \"severity\": \"Warning\",\r\n        \"state\": \"Closed\",\r\n        \"title\": \"Low memory capacity\",\r\n        \"impactedResourceId\": \"/subscriptions/fed888f2-d08a-44a5-8789-c3017c68a485/resourceGroups/system.local/providers/Microsoft.Fabric.Admin/fabricLocations/local\",\r\n        \"impactedResourceDisplayName\": \"Capacity\",\r\n        \"preview\": \"False\",\r\n        \"hasValidRemediationAction\": false,\r\n        \"remediationHistory\": {}\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/fed888f2-d08a-44a5-8789-c3017c68a485/resourceGroups/System.local/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/local/alerts/fddcae4d-2429-4ca7-8c60-b395ebde0392\",\r\n      \"name\": \"local/fddcae4d-2429-4ca7-8c60-b395ebde0392\",\r\n      \"type\": \"Microsoft.InfrastructureInsights.Admin/regionHealths/alerts\",\r\n      \"location\": \"local\",\r\n      \"tags\": {},\r\n      \"properties\": {\r\n        \"closedTimestamp\": \"2018-10-11T12:02:01.4740769Z\",\r\n        \"createdTimestamp\": \"2018-10-11T11:56:55.6591599Z\",\r\n        \"description\": [\r\n          {\r\n            \"text\": \"The infrastructure role instance AZS-CA01 is unavailable. This may impact performance and availability of Azure Stack services.\",\r\n            \"type\": \"Text\"\r\n          }\r\n        ],\r\n        \"faultId\": \"0e1ae28d-e89a-43c3-a45c-55b63ec1c9b6\",\r\n        \"alertId\": \"fddcae4d-2429-4ca7-8c60-b395ebde0392\",\r\n        \"faultTypeId\": \"FRP.Heartbeat.InfraVM\",\r\n        \"lastUpdatedTimestamp\": \"2018-10-11T12:02:01.4740769Z\",\r\n        \"alertProperties\": {\r\n          \"heartbeatAlert\": \"true\",\r\n          \"nodeName\": \"AZS-CA01\"\r\n        },\r\n        \"remediation\": [\r\n          {\r\n            \"text\": \"1. Navigate to the infrastructure role instance \",\r\n            \"type\": \"Text\"\r\n          },\r\n          {\r\n            \"linkType\": \"ResourceId\",\r\n            \"resourceId\": \"/subscriptions/fed888f2-d08a-44a5-8789-c3017c68a485/resourceGroups/system.local/providers/Microsoft.Fabric.Admin/fabricLocations/local/infraroleinstances/AZS-CA01\",\r\n            \"type\": \"LinkBegin\"\r\n          },\r\n          {\r\n            \"text\": \"AZS-CA01\",\r\n            \"type\": \"Text\"\r\n          },\r\n          {\r\n            \"type\": \"LinkEnd\"\r\n          },\r\n          {\r\n            \"text\": \" and start or restart the role instance.  \",\r\n            \"type\": \"Text\"\r\n          },\r\n          {\r\n            \"type\": \"NewLine\"\r\n          },\r\n          {\r\n            \"text\": \"2. If the problem persists, please contact support. Before you do, start the log file collection process using the guidance from \",\r\n            \"type\": \"Text\"\r\n          },\r\n          {\r\n            \"linkType\": \"Uri\",\r\n            \"uri\": \"https://aka.ms/azurestacklogfiles\",\r\n            \"type\": \"LinkBegin\"\r\n          },\r\n          {\r\n            \"text\": \"https://aka.ms/azurestacklogfiles\",\r\n            \"type\": \"Text\"\r\n          },\r\n          {\r\n            \"type\": \"LinkEnd\"\r\n          },\r\n          {\r\n            \"text\": \".\",\r\n            \"type\": \"Text\"\r\n          }\r\n        ],\r\n        \"resourceProviderRegistrationId\": \"e56bc7b8-c8b5-4e25-b00c-4f951effb22c\",\r\n        \"severity\": \"Warning\",\r\n        \"state\": \"Closed\",\r\n        \"title\": \"Infrastructure role instance unavailable\",\r\n        \"impactedResourceId\": \"/subscriptions/fed888f2-d08a-44a5-8789-c3017c68a485/resourceGroups/system.local/providers/Microsoft.Fabric.Admin/fabricLocations/local/infraRoleInstances/AZS-CA01\",\r\n        \"impactedResourceDisplayName\": \"AZS-CA01\",\r\n        \"closedByUserAlias\": \"?api-version=1.0.0\",\r\n        \"preview\": \"False\",\r\n        \"hasValidRemediationAction\": true,\r\n        \"remediationHistory\": {}\r\n      }\r\n    }\r\n  ]\r\n}",
+      "StatusCode": 200
+    }
+  ],
+  "Names": {},
+  "Variables": {
+    "SubscriptionId": "fed888f2-d08a-44a5-8789-c3017c68a485"
+  }
+}

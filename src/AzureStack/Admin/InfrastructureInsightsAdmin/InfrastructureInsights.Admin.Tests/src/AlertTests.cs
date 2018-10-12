@@ -142,6 +142,35 @@ namespace InfrastructureInsights.Tests
             });
         }
 
+        [Fact]
+        public void TestRepairAlert()
+        {
+            RunTest((client) => {
+                bool done = false;
+                var regions = client.RegionHealths.List(ResourceGroupName);
+                Common.MapOverIPage(regions, client.RegionHealths.ListNext, (regionHealth) => {
+                    if (!done)
+                    {
+                        var regionName = ExtractName(regionHealth.Name);
+                        var alerts = client.Alerts.List(ResourceGroupName, regionName);
+                        Common.MapOverIPage(alerts, client.Alerts.ListNext, (alert) => {
+                            if (!done && alert.HasValidRemediationAction.ToLowerInvariant() == "True")
+                            {
+                                // If an alert has HasValidRemediationAction set to true
+                                // then it should also have at least one remediation action defined for it
+                                Assert.NotEmpty(alert.RemediationActionTypes);
+
+                                var alertName = ExtractName(alert.AlertId);
+                                client.Alerts.Repair(ResourceGroupName, regionName, alertName);
+
+                                done = true;
+                            }
+
+                        });
+                    }
+                });
+            });
+        }
 
 
         [Fact(Skip ="Causes RP to crash.")]

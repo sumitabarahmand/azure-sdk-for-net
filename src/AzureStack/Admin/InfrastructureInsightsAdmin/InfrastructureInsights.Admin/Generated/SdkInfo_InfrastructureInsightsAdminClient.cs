@@ -33,7 +33,7 @@ namespace Microsoft.AzureStack.Management.InfrastructureInsights.Admin
       public static readonly String AutoRestCmdExecuted = "cmd.exe /c autorest.cmd https://github.com/sumitabarahmand/azure-rest-api-specs/blob/feature/repairswagger/specification/azsadmin/resource-manager/infrastructureinsights/readme.md --csharp --version=latest --reflect-api-versions --csharp-sdks-folder=C:\\Git\\azure-sdk-for-net\\src\\AzureStack\\Admin\\InfrastructureInsightsAdmin\\InfrastructureInsights.Admin";
       public static readonly String GithubForkName = "sumitabarahmand";
       public static readonly String GithubBranchName = "feature/repairswagger";
-      public static readonly String GithubCommidId = "6a19a8775a8d24aeb02b73f20e7c3d56ba1ba13c";
+      public static readonly String GithubCommidId = "6aae4501e6b6fdec50b9ccaadb5fd1413a398b56";
       public static readonly String CodeGenerationErrors = "";
       public static readonly String GithubRepoName = "azure-rest-api-specs";
       // END: Code Generation Metadata Section
