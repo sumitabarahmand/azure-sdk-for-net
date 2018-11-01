@@ -3,6 +3,7 @@
 // license information.
 //
 
+using System;
 using Microsoft.AzureStack.Management.InfrastructureInsights.Admin;
 using Microsoft.AzureStack.Management.InfrastructureInsights.Admin.Models;
 using Xunit;
@@ -154,14 +155,29 @@ namespace InfrastructureInsights.Tests
                         var regionName = ExtractName(regionHealth.Name);
                         var alerts = client.Alerts.List(ResourceGroupName, regionName);
                         Common.MapOverIPage(alerts, client.Alerts.ListNext, (alert) => {
-                            if (!done && alert.HasValidRemediationAction.ToLowerInvariant() == "True")
+                            if (!done && alert.HasValidRemediationAction.ToLowerInvariant() == "true")
                             {
-                                // If an alert has HasValidRemediationAction set to true
-                                // then it should also have at least one remediation action defined for it
-                                Assert.NotEmpty(alert.RemediationActionTypes);
-
                                 var alertName = ExtractName(alert.AlertId);
-                                client.Alerts.Repair(ResourceGroupName, regionName, alertName);
+                                var exceptionThrown = false;
+                                try
+                                {
+                                    client.Alerts.Repair(ResourceGroupName, regionName, alertName);
+                                }
+                                catch(Exception)
+                                {
+                                    exceptionThrown = true;
+                                }
+                                finally
+                                {
+                                    if(alert.State.Equals("Active"))
+                                    {
+                                        Assert.False(exceptionThrown);
+                                    }
+                                    else
+                                    {
+                                        Assert.True(exceptionThrown);
+                                    }
+                                }
 
                                 done = true;
                             }
