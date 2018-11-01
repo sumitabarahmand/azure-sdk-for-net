@@ -169,7 +169,7 @@ namespace InfrastructureInsights.Tests
                                 }
                                 finally
                                 {
-                                    if(alert.State.Equals("Active"))
+                                    if (alert.State.Equals("Active"))
                                     {
                                         Assert.False(exceptionThrown);
                                     }
