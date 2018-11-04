@@ -4,7 +4,7 @@ Commencing code generation
 Generating CSharp code
 Executing AutoRest command
 cmd.exe /c autorest.cmd https://github.com/sumitabarahmand/azure-rest-api-specs/blob/feature/repairswagger/specification/azsadmin/resource-manager/infrastructureinsights/readme.md --csharp --version=latest --reflect-api-versions --csharp-sdks-folder=C:\Git\azure-sdk-for-net\src\AzureStack\Admin\InfrastructureInsightsAdmin\InfrastructureInsights.Admin
-2018-11-04 06:52:11 UTC
+2018-11-04 07:22:18 UTC
 Azure-rest-api-specs repository information
 GitHub fork: sumitabarahmand
 Branch:      feature/repairswagger
