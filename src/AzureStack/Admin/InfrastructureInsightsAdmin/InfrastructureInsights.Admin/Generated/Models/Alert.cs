@@ -74,7 +74,7 @@ namespace Microsoft.AzureStack.Management.InfrastructureInsights.Admin.Models
         /// alert.</param>
         /// <param name="hasValidRemediationAction">Indicates if the alert can
         /// be remediated.</param>
-        public Alert(string id = default(string), string name = default(string), string type = default(string), IDictionary<string, string> tags = default(IDictionary<string, string>), string location = default(string), string closedTimestamp = default(string), string createdTimestamp = default(string), IList<IDictionary<string, string>> description = default(IList<IDictionary<string, string>>), string faultId = default(string), string alertId = default(string), string faultTypeId = default(string), string lastUpdatedTimestamp = default(string), IDictionary<string, string> alertProperties = default(IDictionary<string, string>), IList<IDictionary<string, string>> remediation = default(IList<IDictionary<string, string>>), string resourceRegistrationId = default(string), string resourceProviderRegistrationId = default(string), string severity = default(string), string state = default(string), string title = default(string), string impactedResourceId = default(string), string impactedResourceDisplayName = default(string), string closedByUserAlias = default(string), string hasValidRemediationAction = default(string))
+        public Alert(string id = default(string), string name = default(string), string type = default(string), IDictionary<string, string> tags = default(IDictionary<string, string>), string location = default(string), string closedTimestamp = default(string), string createdTimestamp = default(string), IList<IDictionary<string, string>> description = default(IList<IDictionary<string, string>>), string faultId = default(string), string alertId = default(string), string faultTypeId = default(string), string lastUpdatedTimestamp = default(string), IDictionary<string, string> alertProperties = default(IDictionary<string, string>), IList<IDictionary<string, string>> remediation = default(IList<IDictionary<string, string>>), string resourceRegistrationId = default(string), string resourceProviderRegistrationId = default(string), string severity = default(string), string state = default(string), string title = default(string), string impactedResourceId = default(string), string impactedResourceDisplayName = default(string), string closedByUserAlias = default(string), bool? hasValidRemediationAction = default(bool?))
             : base(id, name, type, tags, location)
         {
             ClosedTimestamp = closedTimestamp;
@@ -213,7 +213,7 @@ namespace Microsoft.AzureStack.Management.InfrastructureInsights.Admin.Models
         /// Gets or sets indicates if the alert can be remediated.
         /// </summary>
         [JsonProperty(PropertyName = "properties.hasValidRemediationAction")]
-        public string HasValidRemediationAction { get; set; }
+        public bool? HasValidRemediationAction { get; set; }
 
     }
 }

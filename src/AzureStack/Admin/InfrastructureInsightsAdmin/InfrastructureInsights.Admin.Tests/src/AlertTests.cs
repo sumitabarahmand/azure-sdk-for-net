@@ -155,7 +155,7 @@ namespace InfrastructureInsights.Tests
                         var regionName = ExtractName(regionHealth.Name);
                         var alerts = client.Alerts.List(ResourceGroupName, regionName);
                         Common.MapOverIPage(alerts, client.Alerts.ListNext, (alert) => {
-                            if (!done && alert.HasValidRemediationAction.ToLowerInvariant() == "true")
+                            if (!done && alert.HasValidRemediationAction.GetValueOrDefault())
                             {
                                 var alertName = ExtractName(alert.AlertId);
                                 var exceptionThrown = false;
