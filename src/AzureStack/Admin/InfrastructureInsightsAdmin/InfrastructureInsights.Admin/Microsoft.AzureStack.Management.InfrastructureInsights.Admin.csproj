@@ -15,6 +15,7 @@
                 Preview release of the InfrastructureInsights administrator SDK which allows administrators  
                 1) View the health of their AzureStack stamp resources 
                 2) View and manage alerts
+                Repair API is supported in azurestack 1811+
             ]]>
         </PackageReleaseNotes>
     </PropertyGroup>
